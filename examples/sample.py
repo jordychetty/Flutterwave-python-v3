@@ -75,6 +75,5 @@ class PayTest(object):
         response = requests.post(endpoint, headers=headers, data=json.dumps(payload))
         print(response.json())
 
-        
 rave = PayTest()
 rave.pay_via_card()
